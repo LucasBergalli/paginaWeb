@@ -3,47 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Empresa de Servicios</title>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a mi página web</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#about">Quiénes Somos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="intro">
-            <h2>Un bosquejo inicial</h2>
-            <p>Esta es una página simple para que puedas editarla y personalizarla a tu gusto. Aquí podrás agregar tus propios textos, imágenes y más.</p>
+        <section class="carousel">
+            <div class="carousel-images">
+                <img src="images/imagen1.jpg" alt="Imagen 1">
+                <img src="images/imagen2.jpg" alt="Imagen 2">
+                <img src="images/imagen3.jpg" alt="Imagen 3">
+            </div>
         </section>
 
-        <section class="cards">
-            <div class="card">
-                <h3>Tarjeta 1</h3>
-                <p>Descripción de la tarjeta 1.</p>
-            </div>
-            <div class="card">
-                <h3>Tarjeta 2</h3>
-                <p>Descripción de la tarjeta 2.</p>
-            </div>
-            <div class="card">
-                <h3>Tarjeta 3</h3>
-                <p>Descripción de la tarjeta 3.</p>
+        <section class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <h3>Servicios</h3>
+                    <p>Descubre nuestros servicios profesionales.</p>
+                    <a href="#services" class="button">Ver Más</a>
+                </div>
+                <div class="service-item">
+                    <h3>Quiénes Somos</h3>
+                    <p>Conoce más sobre nuestra empresa.</p>
+                    <a href="#about" class="button">Ver Más</a>
+                </div>
+                <div class="service-item">
+                    <h3>Contacto</h3>
+                    <p>Estamos aquí para ayudarte.</p>
+                    <a href="#contact" class="button">Ver Más</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Creado por Esteban Gonzalez</p>
+        <p>&copy; 2024 Empresa de Servicios. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
