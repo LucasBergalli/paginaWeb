@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Empresa de Servicios</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#services">Servicios</a></li>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Empresa" class="logo-img">
+            </div>
+            <ul class="menu">
+                <li><a href="#about">Home</a></li>
                 <li><a href="#about">Quiénes Somos</a></li>
+                <li class="dropdown">
+                    <a href="#services">Servicios</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#construccion">Consultoría Integral</a></li>
+                        <li><a href="#presupuesto">Tercerización de Servicios</a></li>
+                        <li><a href="#logistica">Proyectos de Inversión</a></li>
+                        <li><a href="#desarrollo">Reingeniería</a></li>
+                        <li><a href="#desarrollo">Presupuesto y Control de Gastos</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#services">Areas</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#construccion">Comercial</a></li>
+                        <li><a href="#presupuesto">Administracion</a></li>
+                        <li><a href="#logistica">Produccion</a></li>
+                        <li><a href="#desarrollo">Abastecimiento</a></li>
+                        <li><a href="#desarrollo">Logistica</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
@@ -20,9 +47,9 @@
     <main>
         <section class="carousel">
             <div class="carousel-images">
-                <img src="images/imagen1.jpg" alt="Imagen 1">
-                <img src="images/imagen2.jpg" alt="Imagen 2">
-                <img src="images/imagen3.jpg" alt="Imagen 3">
+                <img src="images/Imagen01.jpg" alt="Imagen 1">
+                <img src="images/Imagen02.jpg" alt="Imagen 2">
+                <img src="images/Imagen03.jpg" alt="Imagen 3">
             </div>
             <div class="carousel-buttons">
                 <button class="prev">❮</button>
@@ -30,23 +57,30 @@
             </div>
         </section>
 
+        <div class="recuadro">
+            <p class="textoRecuadro">Somos profesionales con experiencia empresarial concreta que nos permite conocer sus necesidades.
+            </p>
+        </div>
+
         <section class="services">
-            <h2>Nuestros Servicios</h2>
             <div class="service-items">
                 <div class="service-item">
-                    <h3>Servicios</h3>
-                    <p>Descubre nuestros servicios profesionales.</p>
-                    <a href="#services" class="button">Ver Más</a>
-                </div>
-                <div class="service-item">
+                    <img src="images/icono1.png" style="width: 50px;" alt="Logo Empresa" class="icono-img">
                     <h3>Quiénes Somos</h3>
                     <p>Conoce más sobre nuestra empresa.</p>
-                    <a href="#about" class="button">Ver Más</a>
+                    <button class="mi-boton">Ver Más</button>
                 </div>
                 <div class="service-item">
+                    <img src="images/icono2.png" style="width: 70px;  margin-top: -15px; margin-bottom: -5px;" alt="Logo Empresa" class="icono-img">
+                    <h3>Servicios</h3>
+                    <p>Descubre nuestros servicios profesionales.</p>
+                    <button class="mi-boton">Ver Más</button>
+                </div>
+                <div class="service-item">
+                    <img src="images/icono3.png" style="width: 70px; margin-top: -10px; margin-bottom: -10px;" alt="Logo Empresa" class="icono-img">
                     <h3>Contacto</h3>
                     <p>Estamos aquí para ayudarte.</p>
-                    <a href="#contact" class="button">Ver Más</a>
+                    <button class="mi-boton">Ver Más</button>
                 </div>
             </div>
         </section>
@@ -58,5 +92,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

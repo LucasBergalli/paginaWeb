@@ -1,51 +1,101 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Header y navegación */
 header {
-    background-color: #007BFF; /* Azul */
-    color: white;
-    padding: 15px 0;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+    background-color: lightslategrey;
     padding: 10px 20px;
 }
 
-.carousel {
-    position: relative;
-    max-width: 100%;
-    height: 300px;
-    overflow: hidden;
-    background-color: #000;
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 480px;
 }
 
-.carousel-images {
+
+.logo-img {
+    width: 60px; /* Ajusta el tamaño del logo según prefieras */
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    transition: transform 0.5s ease;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu li:hover a {
+    background-color: slategrey;
+}
+
+.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Alinea el desplegable justo debajo del menú */
+    left: 0;
+    background-color: slategrey;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    z-index: 1; /* Asegura que el menú desplegable se muestre por encima del contenido */
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background-color: slategrey;
+}
+
+/* Estilos del cuerpo y otras secciones */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 500px;
+    margin-top: 20px;
 }
 
 .carousel-images img {
     width: 100%;
-    height: auto;
+    display: block;
 }
 
 .carousel-buttons {
     position: absolute;
     top: 50%;
-    width: 100%;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
@@ -55,49 +105,90 @@ nav a {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    font-size: 24px;
     cursor: pointer;
+    padding: 10px;
 }
 
+/* Estilos de los servicios */
 .services {
     text-align: center;
-    background-color: #E3F2FD; /* Celeste */
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 .service-items {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .service-item {
-    background-color: #4CAF50; /* Verde */
-    color: white;
+    flex: 1;
+    margin: 0 15px;
+    background-color: #f9f9f9;
     padding: 20px;
-    border-radius: 5px;
-    width: 30%;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #E0FFFF, #A9B2B6);
 }
 
-.service-item h3 {
-    margin: 0;
-}
-
-.button {
-    display: inline-block;
-    background-color: #007BFF; /* Azul */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #007BFF; /* Azul */
+    background-color: lightslategrey;
     color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+
+.recuadro {
+    background-color: #A9B2B6;
+    padding: 20px; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    border-radius: 10px;
+    font-size: 18px;
+    color: white; 
+    text-align: center;
+    margin-top: 40px;
+}
+
+p.textoRecuadro {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carousel-images {
+    height: 400px;
+}
+
+img.icono-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.mi-boton {
+    background-color: lightseagreen; /* Verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que tenga el tamaño adecuado */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.mi-boton:hover {
+    background-color: lightseagreen; /* Color más oscuro al pasar el mouse */
+}
+
+body {
+    background-color: #F0F0F0;
 }
