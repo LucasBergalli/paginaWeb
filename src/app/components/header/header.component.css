@@ -1,0 +1,137 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header y navegación */
+nav.navbar {
+    background-color: lightslategrey;
+    padding: 10px 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 480px;
+}
+
+a {
+    font-size: 18px;
+}
+
+
+.logo-img {
+    width: 60px; /* Ajusta el tamaño del logo según prefieras */
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    position: relative;
+    margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu li:hover a {
+    background-color: slategrey;
+}
+
+.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Alinea el desplegable justo debajo del menú */
+    left: 0;
+    background-color: slategrey;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    z-index: 1; /* Asegura que el menú desplegable se muestre por encima del contenido */
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background-color: slategrey;
+}
+
+/* Estilos del cuerpo y otras secciones */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 500px; /* Ajusta según sea necesario */
+}
+
+.carousel-images img {
+    width: 100%;
+    display: block; /* Asegúrate de que se muestran como bloques */
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilos de los servicios */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-item {
+    flex: 1;
+    margin: 0 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #E0FFFF, #A9B2B6);
+}

@@ -1,0 +1,112 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Estilos de los servicios */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-item {
+    flex: 1;
+    margin: 0 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #E0FFFF, #A9B2B6);
+}
+
+
+footer {
+    background-color: lightslategrey;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+
+.recuadro {
+    background-color: #A9B2B6;
+    padding: 20px; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 20px auto; 
+    border-radius: 10px;
+    font-size: 18px;
+    color: white; 
+    text-align: center;
+    margin-top: 40px;
+}
+
+p.textoRecuadro {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carousel-images {
+    height: 400px;
+}
+
+img.icono-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.mi-boton {
+    background-color: lightseagreen; /* Verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que tenga el tamaño adecuado */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.mi-boton:hover {
+    background-color: lightseagreen; /* Color más oscuro al pasar el mouse */
+}
+
+

@@ -1,0 +1,41 @@
+<main>
+    <section class="carousel">
+        <div class="carousel-images">
+            <img src="../assets/images/Imagen01.jpg" style="display: block;" alt="Imagen 1">
+            <img src="../assets/images/Imagen02.jpg" style="display: none;" alt="Imagen 2">
+            <img src="../assets/images/Imagen03.jpg" style="display: none;" alt="Imagen 3">
+        </div>
+        <div class="carousel-buttons">
+            <button class="prev" (click)="prev()">❮</button>
+            <button class="next"(click)="next()">❯</button>
+        </div>
+    </section>
+
+    <div class="recuadro">
+        <p class="textoRecuadro">Somos profesionales con experiencia empresarial concreta que nos permite conocer sus necesidades.
+        </p>
+    </div>
+
+    <section class="services">
+        <div class="service-items">
+            <div class="service-item">
+                <img src="../assets/images/icono1.png" style="width: 50px;" alt="Logo Empresa" class="icono-img">
+                <h3>Quiénes Somos</h3>
+                <p>Conoce más sobre nuestra empresa.</p>
+                <button (click)="redirectTo('/quienes-somos')" class="mi-boton">Ver Más</button>
+            </div>
+            <div class="service-item">
+                <img src="../assets/images/icono2.png" style="width: 70px;  margin-top: -15px; margin-bottom: -5px;" alt="Logo Empresa" class="icono-img">
+                <h3>Servicios</h3>
+                <p>Descubre nuestros servicios profesionales.</p>
+                <button class="mi-boton">Ver Más</button>
+            </div>
+            <div class="service-item">
+                <img src="../assets/images/icono3.png" style="width: 70px; margin-top: -10px; margin-bottom: -10px;" alt="Logo Empresa" class="icono-img">
+                <h3>Contacto</h3>
+                <p>Estamos aquí para ayudarte.</p>
+                <button class="mi-boton">Ver Más</button>
+            </div>
+        </div>
+    </section>
+</main>
