@@ -16,7 +16,7 @@ nav.navbar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 480px;
+    gap: 320px;
 }
 
 a {
@@ -25,9 +25,7 @@ a {
 
 
 .logo-img {
-    width: 60px; /* Ajusta el tamaño del logo según prefieras */
     height: 60px;
-    border-radius: 50%;
     object-fit: cover;
 }
 
@@ -134,4 +132,23 @@ a {
     border-radius: 10px;
     text-align: center;
     background: linear-gradient(to right, #E0FFFF, #A9B2B6);
+}
+
+.prompt-medium {
+    font-family: "Prompt", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+main {
+    flex: 1;
 }

@@ -33,7 +33,7 @@
 /* Estilos de los servicios */
 .services {
     text-align: center;
-    padding: 50px 20px;
+    padding: 10px 20px;
 }
 
 .service-items {
@@ -79,6 +79,8 @@ footer {
 p.textoRecuadro {
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .carousel-images {
@@ -91,7 +93,7 @@ img.icono-img {
 }
 
 .mi-boton {
-    background-color: lightseagreen; /* Verde */
+    background-color: lightslategrey; /* Verde */
     color: white; /* Texto blanco */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
@@ -99,24 +101,39 @@ img.icono-img {
     text-align: center; /* Centrar texto */
     text-decoration: none; /* Sin subrayado */
     display: inline-block; /* Para que tenga el tamaño adecuado */
-    font-size: 16px; /* Tamaño de la fuente */
     margin: 4px 2px; /* Margen */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
     transition: background-color 0.3s; /* Transición suave */
+    font-family: 'Roboto', sans-serif;
 }
 
 .mi-boton:hover {
-    background-color: lightseagreen; /* Color más oscuro al pasar el mouse */
+    background-color: lightslategrey; /* Color más oscuro al pasar el mouse */
 }
 
 .overlay-text {
     position: absolute;
-    top: 80%;
+    top: 40%;
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 1100px;
+    margin-left: 100px;
+    padding: 5px;
+}
+
+p.subitulo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h3.tit1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 

@@ -1,3 +1,34 @@
 body {
-    background-color: #F0F0F0;
+    background-image: url("assets/images/fondo3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: #F0F0F0; /* Fondo en blanco */
 }
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/images/fondo3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px); /* Ajusta el valor para cambiar la intensidad del desenfoque */
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+    opacity: 0.8; /* Opcional: hace que el fondo sea un poco translúcido */
+}
+
+/* Fondo blanco solo para la ruta raíz exacta /paginaWeb/ */
+body.pagina-web-background {
+    background: #F0F0F0; /* Fondo en blanco */
+}
+
+body.pagina-web-background::before {
+    background-image: none; /* Quita la imagen del pseudo-elemento */
+}
+

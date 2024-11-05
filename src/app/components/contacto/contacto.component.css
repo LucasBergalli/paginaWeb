@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Color de fondo suave */
+    color: #333;
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 40px;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    text-align: center;
+  }
+  
+  .container {
+    display: flex; /* Flexbox para crear columnas */
+    max-width: 1000px; /* Ancho máximo */
+    background: linear-gradient(to right, #E0FFFF, #A9B2B6);
+    padding: 40px;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin: auto;
+  }
+  
+  .contact-info {
+    flex: 1; /* Toma el espacio disponible */
+    margin-right: 20px; /* Espacio entre columnas */
+  }
+  
+  .envelope {
+    flex: 1; /* Toma el espacio disponible */
+    background-color: mintcream; /* Fondo para el sobre */
+    border: 2px solid lightslategrey; /* Borde colorido */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 0px 20px 20px 20px; /* Espacio interno reducido */
+    transition: box-shadow 0.3s; /* Transición para el efecto de sombra */
+  }
+  
+  .envelope:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Efecto de sombra al pasar el mouse */
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .address, .phone {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 2.2em;
+    margin: 5px 0 10px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .map-container {
+    margin-top: 20px; /* Espacio superior para el mapa */
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px; /* Espacio reducido */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px; /* Espacio interno reducido */
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.9em; /* Tamaño de fuente reducido */
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: lightslategrey; /* Color al enfocar */
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px; /* Altura de área de texto ajustada */
+  }
+  
+  button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px; /* Espacio interno reducido */
+    background-color: lightslategrey; /* Color de botón */
+    color: white;
+    font-size: 1em; /* Tamaño de fuente reducido */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición para el efecto hover */
+  }
+  
+  button:hover {
+    background-color: lightslategrey; /* Color al pasar el mouse */
+  }
+
+  p{
+    margin: auto;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+  
